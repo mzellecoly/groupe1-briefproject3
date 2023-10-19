@@ -74,18 +74,9 @@
     display: none;
 }
 
-.FirstMenu ul li:nth-child(2){
-    position: absolute ;
-    left: 10vh;
-} 
-.FirstMenu ul li:nth-child(3){
-    position: absolute ;
-    left: 45vh;
-} 
 .FirstMenu ul li:nth-child(4){
-    position: absolute ;
-    left: 80vh;
-} 
+    margin-right: 5vh;
+}  
 
 
 .FirstMenu ul li span{
@@ -97,6 +88,9 @@
     border-right: none;
 }
 
+.personnal-info span{
+    font-size: 2.5vh !important;
+}
 .personnal-info i{
     color: var(--main-color);
 }
@@ -118,7 +112,7 @@
     align-items: center;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 120px;
+    height: 90px;
     gap: 20px;
     margin-top: -16px;
     padding-top: 0.8em;
@@ -137,13 +131,13 @@
 
 .SecondMenu .SecondMenu_Image img{
     max-width: 150px;
-    max-height: 100px;
+    max-height: 60px;
 }
 
-.SecondMenu_Formation img{
+/* .SecondMenu_Formation img{
     max-width: 60px;
     max-height: 70px;
-}
+} */
 
 
 .SecondMenu_Formation ul{
@@ -284,7 +278,7 @@
 }
 
 /*---------- Responsivité---------- */
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1000px) {
    .SecondMenu{
     display: none;
    }
