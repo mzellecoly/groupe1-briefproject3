@@ -1,0 +1,182 @@
+:root{
+    --main-color: #E94D1A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* debut banierre  */
+.banierre-formation{
+    background-image: url('https://img.freepik.com/free-photo/group-young-people-sitting-conference-together_58466-11188.jpg?size=626&ext=jpg&ga=GA1.1.59389668.1692912989&semt=sph');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+.link-banierre h4{
+    margin-left: 5vh;
+    position: relative;
+    top: -20vh;
+}
+
+.link-banierre a{
+    color: black;
+    text-decoration: none;
+}
+
+.link-banierre .link-active{
+    color: var(--main-color);
+}
+
+/* Fin banierre  */
+
+/* Debut text banierre  */
+.text-banierre{
+    margin: 0 auto;
+    position: relative;
+    top: -15vh;
+    background-color: white;
+}
+.text-banierre .dara-tech{
+    color: var(--main-color);
+}
+/* Fin text banierre  */
+
+/* Debut formation  */
+.formations .desc-card{
+    height: 45vh;
+}
+
+.formations .img-card img, iframe{
+    width: 100%;
+    height: 45vh;
+    border-radius: 3vh;
+}
+
+/* Afficher la video de presentation en hover:  */
+.formations .img-card iframe{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: ease-in 0.7s;
+}
+
+.formations .img-card iframe:hover{
+    opacity: 1;
+}
+
+.formations .desc-card .video{
+    color: var(--main-color);
+}
+
+.formations .desc-card .btn-formation{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.formations .desc-card .btn-formation:hover{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+/* Fin formation  */
+
+/* Debut ligne séparatrice */
+.separation{
+    margin: 6vh 0;
+    display: flex;
+}
+.soulignement{
+    width: 50%;
+    height: 2px;
+    background-color: #AAA7A7;
+    
+
+    /* border: 2px solid #AAA7A7; */
+}
+.bi-circle-fill{
+    color: var(--main-color);
+    position: relative;
+    top: -2.65vh;
+    
+}
+
+/* Debut ligne séparatrice */
+
+/* Debut pagignation */
+
+.page-container{
+    margin-top: -5vh;
+    margin-bottom: 5vh;
+}
+
+.page-container .page{
+    background-color: #F6F6F6;
+    padding: 1vh 2vh;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 2vh;
+    color: var(--main-color);
+    text-align: center; 
+}
+
+.page-container .page-active{
+    background-color: var(--main-color);
+    color: white;
+}
+/* Fin pagignation */
+
+@media screen and (max-width: 1900px) {
+    .bi-circle-fill{
+        position: relative;
+        top: -1.5vh;
+        
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .bi-circle-fill{
+        position: relative;
+        top: -1.6vh;
+        
+    }
+}
+@media screen and (width <= 1366px) {
+    .bi-circle-fill{
+        position: relative;
+        top: -2.65vh;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .bi-circle-fill{
+        position: relative;
+        top: -1.6vh;
+        
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .bi-circle-fill{
+        position: relative;
+        top: -1.3vh;
+        
+    }
+}
+@media screen and (max-width: 600px) {
+    .bi-circle-fill{
+        top: -1.8vh;        
+    }
+    .page-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        gap: 2vh;
+    }
+}
