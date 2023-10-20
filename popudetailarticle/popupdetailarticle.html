@@ -10,119 +10,210 @@
     <script src="detailarticle.js"></script>
   </head>
   <body>
-    <h2>Details commentaire</h2>
-    <p>
-      <button class="button me-3" data-modal="modalOne"><i class="bi bi-eye-fill"></i></button>
-      <button class="button me-3" data-modal="modalTwo"><i class="bi bi-pencil-square"></i></button>
-      <button class="button" data-modal="modalThree"><i class="bi bi-chat-left-text"></i></button>
-    </p>
-    
+    <!-- Article CMS  -->
+    <div class="article-cms">
+      <h2>Details commentaire article CMS</h2>
+      <p>
+        <button class="button me-3" data-modal="modalOne"><i class="bi bi-eye-fill"></i></button>
+        <button class="button me-3" data-modal="modalTwo"><i class="bi bi-pencil-square"></i></button>
+        <button class="button" data-modal="modalThree"><i class="bi bi-chat-left-text"></i></button>
+      </p>
   
-
-
-    <!-- Details commentaire :  -->
-    <div id="modalOne" class="modal">
-      <div class="modal-content">
-        <div class="contact-form">
-          <a class="close">&times;</a>
-          <div class="container detail">
-            <h1 class="fw-bold text-center mb-3">La découverte des CMS</h1>
-            <img src="images/articlecms.png" alt="articlecms" height="600px" width="100%">
-            <div class="d-flex justify-content-center mt-3 fs-5">
-                <p class="date d-flex me-5"> <span class="me-2"><i class="bi bi-clock"></i></span> <span>20 août 2023</span></p>
-                <p class="autheur d-flex"> <span class="me-2"><i class="bi bi-person"></i></span> <span>Djiby Seck</span></p>
+      <!-- Details commentaire :  -->
+      <div id="modalOne" class="modal">
+        <div class="modal-content">
+          <div class="contact-form">
+            <a class="close">&times;</a>
+            <div class="container detail">
+              <h1 class="fw-bold text-center mb-3">La découverte des CMS</h1>
+              <img src="images/articlecms.png" alt="articlecms" height="600px" width="100%">
+              <div class="d-flex justify-content-center mt-3 fs-5">
+                  <p class="date d-flex me-5"> <span class="me-2"><i class="bi bi-clock"></i></span> <span>20 août 2023</span></p>
+                  <p class="autheur d-flex"> <span class="me-2"><i class="bi bi-person"></i></span> <span>Djiby Seck</span></p>
+              </div>
+              <div class="desc">
+                  <p class="fs-4">La découverte des CMS, ou systèmes de gestion de contenu, a révolutionné la façon dont les sites web sont créés, gérés et mis à jour. </p>
+                  <p class="fs-4">Un CMS est un logiciel qui permet de créer, éditer, organiser et publier du contenu sur un site web de manière intuitive, sans nécessiter des compétences avancées en programmation.</p>
+                  <p class="fs-4">Il permet à l'utilisateur de gérer son site Web sans nécessairement avoir besoin de connaissances en programmation, ce qui est souvent une caractéristique recherchée dans les petites et moyennes entreprises.</p>
+              </div>
+  
+              <div class="partage mb-5">
+                  <h4 class="fs-4 fw-bold">Partagez cet article</h4>
+                  <div class="link">
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="bi bi-instagram"></i>
+                      <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+              </div>
             </div>
-            <div class="desc">
-                <p class="fs-4">La découverte des CMS, ou systèmes de gestion de contenu, a révolutionné la façon dont les sites web sont créés, gérés et mis à jour. </p>
-                <p class="fs-4">Un CMS est un logiciel qui permet de créer, éditer, organiser et publier du contenu sur un site web de manière intuitive, sans nécessiter des compétences avancées en programmation.</p>
-                <p class="fs-4">Il permet à l'utilisateur de gérer son site Web sans nécessairement avoir besoin de connaissances en programmation, ce qui est souvent une caractéristique recherchée dans les petites et moyennes entreprises.</p>
-            </div>
-
-            <div class="partage mb-5">
-                <h4 class="fs-4 fw-bold">Partagez cet article</h4>
-                <div class="link">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Ajouter commentaire  -->
+      <div id="modalTwo" class="modal">
+        <div class="modal-content">
+          <div class="container ajout-commentaire">
+            <span class="close">&times;</span>
+            <form action="">
+                <div class="mb-3">
+                    <label for="pseudo" class="form-label">Votre Pseudo</label>
+                    <input type="text" class="form-control" id="pseudo" placeholder="Pseudo...">
                 </div>
+                <div class="mb-3">
+                    <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+                    <textarea class="form-control" id="message" placeholder="Votre commentaire ici..." rows="5"></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="btn fw-bold rounded-0" type="submit" onclick=ajouter()>Envoyer</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Liste des commentaires  -->
+      <div id="modalThree" class="modal">
+        <div class="modal-content">
+          <div class="liste-commaitare container">
+            <span class="close">&times;</span>
+            <div class="commentaire mb-3">
+                <div class="d-flex">
+                    <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
+                    <div class="ms-2">
+                        <p>Marie Laure Coly</p>
+                        <p>25/09/2023</p>
+                    </div>
+                </div>
+                <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
+            </div>
+            <div class="commentaire mb-3">
+                <div class="d-flex">
+                    <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
+                    <div class="ms-2">
+                        <p>Marie Laure Coly</p>
+                        <p>25/09/2023</p>
+                    </div>
+                </div>
+                <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
+            </div>
+            <div class="commentaire mb-3">
+                <div class="d-flex">
+                    <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
+                    <div class="ms-2">
+                        <p>Marie Laure Coly</p>
+                        <p>25/09/2023</p>
+                    </div>
+                </div>
+                <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
+            </div>
+            <div class="commentaire">
+                <div class="d-flex">
+                    <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
+                    <div class="ms-2">
+                        <p>Marie Laure Coly</p>
+                        <p>25/09/2023</p>
+                    </div>
+                </div>
+                <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+    <div class="article-dev">
+      <!-- Article Dev -->
+      <h2>Details commentaire article Dev</h2>
+        <p>
+          <button class="button me-3" data-modal="modalFour"><i class="bi bi-eye-fill"></i></button>
+          <button class="button me-3" data-modal="modalTwo"><i class="bi bi-pencil-square"></i></button>
+          <button class="button" data-modal="modalThree"><i class="bi bi-chat-left-text"></i></button>
+        </p>
+    
+        <!-- Details commentaire :  -->
+        <div id="modalFour" class="modal">
+          <div class="modal-content">
+            <div class="contact-form">
+              <a class="close">&times;</a>
+              <div class="container detail">
+                <h1 class="fw-bold text-center mb-3">Devenir développeur web en 2023</h1>
+                <img src="images/articledev.png" alt="articlecms" height="600px" width="100%">
+                <div class="d-flex justify-content-center mt-3 fs-5">
+                    <p class="date d-flex me-5"> <span class="me-2"><i class="bi bi-clock"></i></span> <span>20 août 2023</span></p>
+                    <p class="autheur d-flex"> <span class="me-2"><i class="bi bi-person"></i></span> <span>Djiby Seck</span></p>
+                </div>
+                <div class="desc">
+                    <p class="fs-4">Le développeur web réalise l’ensemble des fonctionnalités techniques d’un site ou d’une application web. Technicien ou ingénieur, il ou elle conçoit des sites sur mesure ou adapte des solutions techniques existantes en fonction du projet et de la demande du client. </p>
+                    <p class="fs-4">À partir du cahier des charges rédigé par le chef de projet en fonction des désirs du client, le développeur web analyse les besoins, choisit la solution technique la mieux adaptée et développe les fonctionnalités du site ou de l’application web. Pour cette dernière étape, il rédige des lignes de code.</p>
+                    <p class="fs-4">Le développeur web peut aussi apporter des solutions aux problèmes présents dans un site déjà en ligne et détectés par le client ou par les internautes. </p>
+                </div>
+    
+                <div class="partage mb-5">
+                    <h4 class="fs-4 fw-bold">Partagez cet article</h4>
+                    <div class="link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      <!-- FinArticle Dev -->
+
     </div>
 
-    <!-- Ajouter commentaire  -->
-    <div id="modalTwo" class="modal">
-      <div class="modal-content">
-        <div class="container ajout-commentaire">
-          <span class="close">&times;</span>
-          <form action="">
-              <div class="mb-3">
-                  <label for="pseudo" class="form-label">Votre Pseudo</label>
-                  <input type="text" class="form-control" id="pseudo" placeholder="Pseudo...">
-              </div>
-              <div class="mb-3">
-                  <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-                  <textarea class="form-control" id="message" placeholder="Votre commentaire ici..." rows="5"></textarea>
-              </div>
-              <div class="text-center">
-                  <button class="btn fw-bold rounded-0" type="submit" onclick=ajouter()>Envoyer</button>
-              </div>
-          </form>
-        </div>
-      </div>
-    </div>
 
-    <!-- Liste des commentaires  -->
-    <div id="modalThree" class="modal">
-      <div class="modal-content">
-        <div class="liste-commaitare container">
-          <span class="close">&times;</span>
-          <div class="commentaire mb-3">
-              <div class="d-flex">
-                  <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
-                  <div class="ms-2">
-                      <p>Marie Laure Coly</p>
-                      <p>25/09/2023</p>
-                  </div>
+    <!-- Article Veille -->
+    <div class="article-veille">
+      <!-- Article Dev -->
+      <h2>Details commentaire article Veille</h2>
+        <p>
+          <button class="button me-3" data-modal="modalFive"><i class="bi bi-eye-fill"></i></button>
+          <button class="button me-3" data-modal="modalTwo"><i class="bi bi-pencil-square"></i></button>
+          <button class="button" data-modal="modalThree"><i class="bi bi-chat-left-text"></i></button>
+        </p>
+    
+        <!-- Details commentaire :  -->
+        <div id="modalFive" class="modal">
+          <div class="modal-content">
+            <div class="contact-form">
+              <a class="close">&times;</a>
+              <div class="container detail">
+                <h1 class="fw-bold text-center mb-3">Devenir développeur web en 2023</h1>
+                <img src="images/articleveille.png" alt="articlecms" height="600px" width="100%">
+                <div class="d-flex justify-content-center mt-3 fs-5">
+                    <p class="date d-flex me-5"> <span class="me-2"><i class="bi bi-clock"></i></span> <span>20 août 2023</span></p>
+                    <p class="autheur d-flex"> <span class="me-2"><i class="bi bi-person"></i></span> <span>Djiby Seck</span></p>
+                </div>
+                <div class="desc">
+                    <p class="fs-4">Le développeur web réalise l’ensemble des fonctionnalités techniques d’un site ou d’une application web. Technicien ou ingénieur, il ou elle conçoit des sites sur mesure ou adapte des solutions techniques existantes en fonction du projet et de la demande du client. </p>
+                    <p class="fs-4">À partir du cahier des charges rédigé par le chef de projet en fonction des désirs du client, le développeur web analyse les besoins, choisit la solution technique la mieux adaptée et développe les fonctionnalités du site ou de l’application web. Pour cette dernière étape, il rédige des lignes de code.</p>
+                    <p class="fs-4">Le développeur web peut aussi apporter des solutions aux problèmes présents dans un site déjà en ligne et détectés par le client ou par les internautes. </p>
+                </div>
+    
+                <div class="partage mb-5">
+                    <h4 class="fs-4 fw-bold">Partagez cet article</h4>
+                    <div class="link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
               </div>
-              <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
-          </div>
-          <div class="commentaire mb-3">
-              <div class="d-flex">
-                  <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
-                  <div class="ms-2">
-                      <p>Marie Laure Coly</p>
-                      <p>25/09/2023</p>
-                  </div>
-              </div>
-              <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
-          </div>
-          <div class="commentaire mb-3">
-              <div class="d-flex">
-                  <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
-                  <div class="ms-2">
-                      <p>Marie Laure Coly</p>
-                      <p>25/09/2023</p>
-                  </div>
-              </div>
-              <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
-          </div>
-          <div class="commentaire">
-              <div class="d-flex">
-                  <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
-                  <div class="ms-2">
-                      <p>Marie Laure Coly</p>
-                      <p>25/09/2023</p>
-                  </div>
-              </div>
-              <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
+            </div>
           </div>
         </div>
-
-      </div>
+      <!-- FinArticle Dev -->
     </div>
+    <!-- Fin Article Veille -->
+
     
     <!-- Script pour le popup  -->
     <script>
