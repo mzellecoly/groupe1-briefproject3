@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+        <link rel="stylesheet" href="contact.css">
+          
+    <link rel="stylesheet" href="../header-footer/header-footer.css">
+    <script src="../header-footer/header-footer.js"></script>
+          <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <!-- Fin bootstrap Icon -->
+     <!-- Fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="formation-art-design.css">
+    
+      <!-- Link script popup validation  -->
+      <script src="sweetalert2.min.js"></script>
+      <link rel="stylesheet" href="sweetalert2.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="sweetalert2.all.min.js"></script>
+      <script src="../Formation_Securite/Securite.js"></script> 
+    </head>
+
+<body>
+
+       <!-- header--------------------------------------------------------------- -->
+       <header>
+        <!------------------Début Section Container_Menu --------------------------->
+  <div class="Container_Menu fixed-top">
+      <!-- Barre de progression  -->
+      <div id="progress">
+          <span id="progressValue">&#x1F815</span>
+      </div>
+      <!-- Fin barre de progression  -->
+
+      <!------------------Debut Section Prémier Menu------------------------->
+      <div class="FirstMenu">
+          <ul>
+              <li class="logo"><a href="../accueil/accueil.html"><img src="images/logo.png" alt="">Darray Technologie</a></li>
+              <li class="fs-5 personnal-info">
+                <i class="bi bi-telephone"></i>
+                <span>(+221) 774065868</span>
+              </li>
+
+              <li class="fs-5 personnal-info">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>DAKAR, SENEGAL</span>
+              </li>
+              
+              <li class="fs-5 personnal-info">
+                <i class="fa-regular fa-envelope"></i>
+                <span class="except">djibysec8@gmail.com</span>
+              </li>
+              
+              <!-- Les icones réseaux sociaux -->
+              <li class="social-media">
+                <i class="fa-brands fa-facebook-f fs-3 me-4"></i>
+                <i class="fa-brands fa-twitter fs-3 me-4"></i>
+                <i class="fa-brands fa-google-plus-g fs-3"></i>
+              </li>
+
+              <!-- Icone hamburger -->
+              <i class="fa-solid fa-bars iconeBarRight" id="cach" style="font-size: 30px;" onclick="afficher()"></i>
+             
+          </ul>
+      </div>
+      <!------------------------ Fin Section Prémier Menu --------------------->
+      
+      <!------------------------Début Section Sidebar Bar Accordion --------------------->
+      <div id="MenuSec" >
+          <br><br>
+          <ul>
+            <li><a href="../apropos/apropos.html">A propos</a></li>
+            <li><a href="../article/article.html">Articles</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+            <li><a href="../service/service.html">Services</a></li>
+            <li><a href="../formation/formation.html">Formation</a></li>
+          </ul>
+          <ul>
+              <li><span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span></li>
+          </ul>
+      </div>
+      <!-------------------------Fin Section Sidebar Bar Accordion ----------------------->
+      
+      <!-------------------------- Début Section SecondMenu ---------------------------->
+      <div class="SecondMenu">
+          <div class="SecondMenu_Image">
+              <img src="../header-footer/images/logo.png" alt="">
+          </div>
+          <div class="SecondMenu_Formation">
+              <ul>
+                <li><a href="../apropos/apropos.html">A propos</a></li>
+                <li><a href="../article/article.html">Articles</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="../service/service.html">Services</a></li>
+                <li><a href="../formation/formation.html">Formation</a></li>
+              </ul>
+          </div>
+      </div>
+      <!---------------Fin Section du Second Menu --------------------------->
+       </header>
+  <!-- fin header-------------------------------------------------------------- -->
+             <!-- debut Banierre  -->
+       <div class="banierre-service">
+      </div>
+      <div class="link-banierre">
+          <h4> 
+              <a href="../accueil/accueil.html">Accueil</a> 
+              <i class="bi bi-chevron-double-right" style="color: #E94D1A;"></i>
+              <span class="link-active"><i class="bi bi-chevron-double-right" style="color: #E94D1A;"></i> Contact</span>
+              
+          </h4>
+      </div>
+      <!-- Fin banierre  -->
+
+    <!-- main -->
+    <main class="contact ">
+        <div class="container mt-5">
+            <div class="gauche border">
+                <div class="first_line d-flex mt-5 gap-3  m-5">
+                    <div class="icones">
+                        <i class="fa-solid fa-location-dot fw-bold fs-3" style="color: #e94d1a;"></i>
+                    </div>
+                    <div class="text">
+                        <p class="fw-bold fs-5 text-start">Emplacement :</p>
+                        <p> DAKAR, SENEGAL</p>
+                    </div>
+                </div>
+
+                <div class="first_line d-flex gap-3  m-5">
+                    <div class="icones">
+                        <i class="fa-solid fa-envelope fs-3" style="color: #e94d1a;"></i>                    </div>
+                    <div class="text">
+                        <p class="fw-bold fs-5 text-start">E-Mail :</p>
+                        <p> djibysec8@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="first_line d-flex gap-3  m-5">
+                    <div class="icones">
+                        <i class="fa-solid fa-phone fs-3" style="color: #e94d1a;"></i>                    </div>
+                    <div class="text">
+                        <p class="fw-bold fs-5 text-start">Téléphone :</p>
+                        <p> 774065868</p>
+                    </div>
+                </div>
+                <div class="iframe">
+                    <iframe class="m-4" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d11094483.321088543!2d-9.335132571372831!3d47.24369397148056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssiege%20simpleon%20france!5e0!3m2!1sfr!2ssn!4v1696778847250!5m2!1sfr!2ssn" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+            <div class="droite">
+              <form class="row g-3 needs-validation mt-5" novalidate>
+                <div class="col-md-6 position-relative ">
+                  <input type="text" class="form-control" id="validationTooltip01"  required placeholder="Nom complet *" >
+                  <div class="valid-tooltip">
+                    bien!
+                  </div>
+                </div>
+               
+                <div class="col-md-6 position-relative">
+                  <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required placeholder="Mail *">
+                    <div class="invalid-tooltip">
+                      Svp entrer un mail valide.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <input type="text" class="form-control" id="validationTooltip03" required placeholder="Sujet *">
+                  <div class="invalid-tooltip">
+                    Sujet svp.
+                  </div>
+                </div>
+              
+                <div class="col-md-12 position-relative">
+                  <textarea class="p-2 border text-secondary" name="" id="" cols="75" rows="12" aria-placeholder="Message *" >Message *</textarea>
+                  <!-- <input type="text" class="form-control form-control-message" id="validationTooltip03" required placeholder="Message"> -->
+                  <div class="invalid-tooltip">
+                    votre message svp.
+                  </div>
+                </div>
+              
+               
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Soumettre</button>
+                </div>
+              </form>          
+
+            </div>
+
+        </div>
+
+    </main>
+
+    
+           <!---------------- Debut Section Footer ---------------------->  
+           <footer>
+            <div class="footer-container">
+                <div class="container">
+                    <div class="footer-personnal-info mb-5">
+                        <div class="row pt-5 pb-4 px-5">
+                            <div class="col-xl-4 col-md-4 mb-2 personnal-info-item">
+                                <div class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="cta-text">
+                                        <h4>Localisation</h4>
+                                        <span>DAKAR ,SENEGAL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-2 personnal-info-item ">
+                                <div class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Nous Contacter</h4>
+                                        <span>(+221)774066588</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 personnal-info-item">
+                                <div class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>Mail </h4>
+                                        <span>djibysec8@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-content mb-5">
+                        <div class="row">
+                            <div class="col-md-4 px-5">
+                                <div class="daaratech">
+                                    <div class="footer-logo fw-bold text-center">
+                                        <a href="../accueil/accueil.html" class="fs-3 mb-4"> DAARAY <br>TECHNOLOGIE</a>
+                                    </div>
+                                    <div class="footer-text ">
+                                        <p class="footer-text-item">Daraay Technologie ,une société <br> de développemnet et d'ingérie  <br>informatique .</p>
+                                    </div>
+                                    <div class="footer-social-icon fw-bold mb-5">
+                                        <h4 class="fw-bold">Suivez-nous</h4>
+                                        <p>
+                                            <button class="me-2 border-0"><i class="fab fa-facebook-f facebook-bg fw-bold"></i></button>
+                                            <button class="me-2 border-0"><i class="fab fa-twitter twitter-bg fw-bold"></i></button>
+                                            <button class="me-2 border-0"><i class="fab fa-google-plus-g google-bg fw-bold"></i></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 px-5">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading fw-bold footer-link">
+                                        <h3>Liens- utiles</h3>
+                                        <div class="line"></div>
+                                    </div>
+                                    <ul>
+                                        <li><a href="../contact/contact.html">Contact</a></li>
+                                        <li><a href="../apropos/apropos.html">A propos</a></li>
+                                        <li><a href="../politique-de-confidentialités/politique-de-confidentialités.html">Politique de Confidentialités</a></li>
+                                        <li><a href="../condition-générale-d'utlisation/condition-générale-d'utlisation.html">Condition générale d'utlisation</a></li>
+                                        <li><a href="../politique-d'utilisation-des-cookies/politique-d'utilisation-des-cookies.html">Politique  d'utilisation des cookies </a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 px-5">
+                                <!---------------- Debut Section Newsletters ------------->
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Newsletter</h3>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="footer-text mb-25">
+                                        <p>N'oublier pas de vous souscrire à notre newsletter.</p>
+                                    </div>
+
+                                    <div class="input-group subscribe-form mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Adress " id="email">
+                                        <button class="btn" type="button" id="button-send" onclick="inscription()"><i class="bi bi-send-fill"></i></button>
+                                    </div>
+                                </div>
+                                <!--------------- Fin Section Newsletters --------------->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!----------------Fin Section Footer ------------------->
+
+
+    <script src="contact.js"></script>
+
+     
+    <script>
+      // Activer la validation du formulaire côté client en utilisant JavaScript
+      (function() {
+        'use strict';
+        var forms = document.querySelectorAll('.needs-validation');
+      
+        Array.prototype.slice.call(forms).forEach(function(form) {
+          form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      })();
+      </script>
+      
+          <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    
+</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
