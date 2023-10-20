@@ -1,0 +1,42 @@
+:root{
+    --orange :#E94D1A;
+    --orange-opac :#e94e1a38;
+    --noir :#151414;
+    --gris :#f6f6f6;
+}
+body{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.team{
+    width: 80%;
+    margin: 0 auto;
+}
+.line{
+    background-color: var(--orange);
+    width: 10%;
+    height: 3px;
+    margin: 0 auto;
+}
+.team-carte{
+    text-align: center;
+    margin: 0 auto;
+}
+.team-carte-image{
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 65px;
+}
+.team-carte-body{
+    background-color: var(--orange-opac);
+    width: 190px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.team-carte-body i{
+    font-size: 30px;
+    text-align: center;
+    padding-left: 30px;
+}
