@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* debut banierre  */
 .banierre-formation{
     background-image: url('https://img.freepik.com/free-photo/group-young-people-sitting-conference-together_58466-11188.jpg?size=626&ext=jpg&ga=GA1.1.59389668.1692912989&semt=sph');
