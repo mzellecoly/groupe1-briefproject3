@@ -1,0 +1,15 @@
+.condition_utilisation h1{
+    border-bottom: 4px solid #e94d1a;
+    display: inline; 
+    justify-content: center !important;
+    align-items: center !important; 
+    text-align: center !important; 
+}
+
+.condition_utilisation p{
+    font-size: 20px;
+}
+.condition_utilisation span{
+    font-weight: bold;
+    font-size: 20px;
+}

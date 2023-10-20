@@ -1,0 +1,80 @@
+:root{
+    --orange1:#e94d1a;
+}
+*{
+    font-family: serif;
+}
+
+.temoignage .container h1{
+    border-bottom: 4px solid var(--orange1);
+    display: inline;
+
+}
+.temoignage .titre2{
+    color: var(--orange1);
+}
+.temoignage .cartes{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 50px;
+    margin-top: 40px;
+}
+.temoignage .carte{
+    border-radius: 30%;
+    padding: 10px; 
+}
+
+.border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    border-radius: 50em;
+}
+.border-gradient-carte {
+    border-image-source: linear-gradient(to left, #e94d1a ,  black);
+
+}
+
+.temoignage .container .cartes .carte img{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+}
+.temoignage .container .cartes .carte h3{
+    color: var(--orange1);
+    font-weight: 300;
+}
+
+#cercle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: var(--orange1);
+}
+
+.pagination{
+    justify-content: center;
+}
+/* media queries */
+@media screen and (max-width: 700px){
+    .temoignage .cartes{
+        display: grid;
+        grid-template-columns: 100% ;
+        gap: 50px;
+        margin-top: 40px;
+    }
+
+}
+@media screen and (min-width: 701px) and (max-width: 1300px){
+    /* .temoignage .cartes{
+        display: flex;
+        flex-wrap: wrap;
+        
+    } */
+
+}
+
+@media screen and (min-width: 1301px){
+
+}
