@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- Lien booststrap -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+          crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+          integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+          crossorigin="anonymous"></script>
+           <!-- Bootstrap Icon -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+     <!-- Fin bootstrap Icon -->
+  
+     <!-- Fontawsome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <script src="sweetalert2.min.js"></script>
+         <link rel="stylesheet" href="sweetalert2.min.css">
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+         <script src="sweetalert2.all.min.js"></script>
+         <script src="../Formation_Securite/Securite.js"></script>
+         <link rel="stylesheet" href="../header-footer/header-footer.css">
+         <script src="../header-footer/header-footer.js"></script>
+         <link rel="stylesheet" href="confidentialite.css">
+    <title>Document</title>
+</head>
+<body>
+        <!------------------Début Section Container_Menu --------------------------->
+          <div class="Container_Menu">
+              <!-- Barre de progression  -->
+              <div id="progress">
+                  <span id="progressValue">&#x1F815</span>
+              </div>
+              <!-- Fin barre de progression  -->
+      
+              <!------------------Debut Section Prémier Menu------------------------->
+              <div class="FirstMenu">
+                  <ul>
+                      <li class="logo"><a href="../accueil/accueil.html"><img src="../header-footer/images/logo.png" alt="">Darray Technologie</a></li>
+                      <li class="personnal-info">
+                        <i class="bi bi-telephone"></i>
+                        <span>(+221) 774065868</span>
+                      </li>
+      
+                      <li class="personnal-info">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>DAKAR, SENEGAL</span>
+                      </li>
+                      
+                      <li class="personnal-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span class="except">djibysec8@gmail.com</span>
+                      </li>
+                      
+                      <!-- Les icones réseaux sociaux -->
+                      <li class="social-media">
+                        <i class="fa-brands fa-facebook-f fs-5 me-4"></i>
+                        <i class="fa-brands fa-twitter fs-5 me-4"></i>
+                        <i class="fa-brands fa-google-plus-g fs-5"></i>
+                      </li>
+      
+                      <!-- Icone hamburger -->
+                      <i class="fa-solid fa-bars iconeBarRight" id="cach" style="font-size: 30px;" onclick="afficher()"></i>
+                     
+                  </ul>
+              </div>
+              <!------------------------ Fin Section Prémier Menu --------------------->
+              
+              <!------------------------Début Section Sidebar Bar Accordion --------------------->
+              <div id="MenuSec" >
+                  <br><br>
+                  <ul>
+                    <li><a href="../apropos/apropos.html">A propos</a></li>
+                    <li><a href="../article/article.html">Articles</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../service/service.html">Services</a></li>
+                    <li><a href="../formation/formation.html">Formation</a></li>
+                  </ul>
+                  <ul>
+                      <li><span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span></li>
+                  </ul>
+              </div>
+              <!-------------------------Fin Section Sidebar Bar Accordion ----------------------->
+              
+              <!-------------------------- Début Section SecondMenu ---------------------------->
+              <div class="SecondMenu">
+                  <div class="SecondMenu_Image">
+                      <a href="../accueil/accueil.html"><img src="../header-footer/images/logo.png" alt=""></a>
+                  </div>
+                  <div class="SecondMenu_Formation">
+                      <ul>
+                        <li><a href="../apropos/apropos.html">A propos</a></li>
+                        <li><a href="../article/article.html">Articles</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../service/service.html">Services</a></li>
+                        <li><a href="../formation/formation.html">Formation</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <!---------------Fin Section du Second Menu --------------------------->
+    <div class="confidentialite container mt-5">
+        <div class="confidentialite-title d-flex justify-content-center">
+            <h1 class="text-center">Politique de confidentialité</h1>
+            <div class="confidentialite-form ml-5">g</div>
+        </div>
+        <div class="confidentialite-line"></div>
+        <div class="container mt-5">
+            <p>Cette politique de confidentialité fournit des informations sur la manière dont Daaray technologie collecte et traite vos données personnelles lorsque vous visitez notre site Web . Elle expose ce que nous faisons de vos données personnelles et comment nous les gardons en sécurité et explique les droits que vous avez en ce qui concerne vos données personnelles.</p>
+            <p class="confidentialite-titre">1- Les données collectées</p>
+            <p>données personnelles que vous inscrivez nous permettent d’améliorer les produits et services sur la plateforme.
+                Nous collectons, stockons, utilisons et transférons les données que vous fournissez dès votre arrivée sur la plateforme, tel(le)s que : <br>
+                Les coordonnées, <br>
+                L’identité,<br>
+                L’adresse électronique et de livraison,<br>
+                Les informations financières,<br>
+                Les Recherches de produits ou services,<br>
+                Les vues, achats et téléchargements</p>
+           <p class="confidentialite-titre">2- Données personnelles</p>
+           <p>Nous exploitons, développons et améliorons les produits et services que nous proposons grâce aux données personnelles des utilisateurs: <br>
+            A l’inscription <br>
+            Au traitement et à la livraison de vos commandes <br>
+            A la gestion de la relation client <br>
+            Dans l’amélioration de notre plateforme, de nos produits et services <br>
+            Pour vous recommander des produits et services susceptibles de vous intéresser <br>
+            Pour vérifier l’identité <br>
+            Détecter les fraudes et abus, réduire les risques de crédit.</p>
+           <p class="confidentialite-titre">3. Comment nous utilisons vos données personnelles</p>
+           <p>Nous utilisons vos données personnelles pour exploiter, fournir, développer et améliorer les produits et services que nous proposons, notamment les suivants : A. Vous enregistrer en tant que nouveau client. B. Traitement et livraison de vos commandes. C. Gérer votre relation avec nous. D. Vous permettre de participer à des promotions, des concours et des enquêtes. E. Améliorer notre site web, nos applications, nos produits et nos services. F. Recommander/promouvoir des produits ou services susceptibles de vous intéresser. G. Vous permettre d'accéder à certains produits et services proposés par nos partenaires et vendeurs. H. Se conformer à nos obligations légales, notamment en vérifiant votre identité si nécessaire. I. Détecter une fraude potentielle.</p>
+           <p class="confidentialite-titre">4. Base juridique du traitement des données personnelles</p>
+           <p>Nous ne traiterons vos données personnelles que si nous avons une base légale pour le faire. La base légale dépendra des objectifs pour lesquels nous avons collecté et utilisé vos données personnelles. Dans presque tous les cas, la base juridique sera l'une des suivantes :services que nous proposons, notamment les suivants : A. Consentement : Par exemple, lorsque vous avez donné votre consentement pour recevoir certaines actions de marketing de notre part. Vous pouvez retirer votre consentement à tout moment, notamment en cliquant sur le lien "désinscription" figurant au bas de tout email (courriel) marketing que nous vous envoyons. B. Nos intérêts commerciaux légitimes : Lorsqu'il nous est nécessaire de comprendre nos clients, de promouvoir nos services et de fonctionner efficacement, à condition, dans chaque cas, que cela soit fait d'une manière légitime qui n'affecte pas indûment votre vie privée et vos autres droits. C. Exécution d'un contrat avec vous : Cela s'applique également lorsque nous devons prendre des mesures avant de conclure un contrat avec vous. Par exemple, lorsque vous avez acheté un produit chez nous et que nous devons utiliser vos coordonnées et vos informations de paiement afin de traiter votre commande et de vous envoyer le produit. D. Respect de la loi : Lorsque nous sommes soumis à une obligation légale et que nous devons utiliser vos données </p>
+           <p class="confidentialite-titre">5. Comment nous partageons vos données personnelles</p>
+           <p>A. Nous pouvons être amenés à partager vos données personnelles avec des tiers aux fins suivantes : i. Vente de produits et de services : Afin de livrer les produits et services achetés sur notre marketplace auprès de tiers, nous pouvons être amenés à fournir vos données personnelles à ces tiers. ii. Travail avec des prestataires de services tiers : Nous engageons des tiers pour exécuter certaines fonctions en notre nom. Il s'agit par exemple de l'exécution de commandes de produits ou de services, de la livraison de colis, de l'analyse de données, de la fourniture d'une assistance marketing, du traitement des paiements, de la transmission de contenu, de l'évaluation et de la gestion du risque de crédit et de la fourniture d'un service clientèle. iii. Transferts d'activités : Dans le cadre du développement de nos activités, nous pourrions vendre ou acheter d'autres entreprises ou services. Dans le cadre de telles transactions, les informations relatives aux clients peuvent être transférées avec d'autres actifs commerciaux. iv. Détection de la fraude et des abus : Nous communiquons des données relatives aux comptes et d'autres données personnelles à d'autres sociétés et organisations ou aux autorités à des fins de protection contre la fraude et de réduction du risque de crédit, et pour nous conformer à la législation en vigueur. B. Lorsque nous partageons vos données personnelles avec des tiers, nous faisons en sorte de: i. exiger d'eux qu'ils acceptent d'utiliser vos données conformément aux termes de la présente notification sur la confidentialité, de notre politique de confidentialité et conformément à la loi applicable ; et ii. ne les autorisons à traiter vos données personnelles qu'à des fins spécifiques et conformément à nos instructions. Nous n'autorisons pas nos prestataires de services tiers à utiliser vos données personnelles à leurs propres fins.</p>
+           <p class="confidentialite-titre">6. Transferts internationaux</p>
+           <p>Nous pouvons transférer vos données personnelles vers des sites situés dans un autre pays, si cela est autorisé par les lois applicables dans votre pays. Ces transferts comportent des risques inhérents.En cas de transferts internationaux de vos données personnelles, nous mettrons en place les mesures nécessaires pour protéger vos données et assurer le même niveau de protection disponible dans le pays d'origine des données. Nous continuerons à respecter vos droits légaux conformément aux termes de la présente notification sur la confidentialité et aux lois applicables dans votre pays.</p>
+           <p class="confidentialite-titre">7. Conservation des données</p>
+           <p>Nous prendrons toutes les mesures raisonnables pour garantir que vos données personnelles sont traitées pendant la période minimale nécessaire aux fins énoncées dans la présente notification sur la confidentialité. Vos données personnelles peuvent être conservées sous une forme permettant l'identification uniquement aussi longtemps que : A. Nous entretenons une relation continue avec vous. Cela nous permet d'améliorer votre expérience avec nous et de nous assurer que vous recevez des communications de notre part. B. Vos données à caractère personnel sont nécessaires dans le cadre des finalités énoncées dans la présente notification sur la confidentialité et nous disposons d'une base juridique valable, C. La durée de : (i) tout délai de prescription applicable (c'est-à-dire toute période pendant laquelle une personne pourrait intenter une action en justice contre nous), et D. Nous examinerons activement les données personnelles que nous détenons et les supprimerons de manière sécurisée, ou dans certains cas les rendrons anonymes, lorsqu'il n'y aura plus de nécessité légale, commerciale ou de consommation pour qu’elles soient conservées.</p>
+           <p class="confidentialite-titre">8. Sécurité des données</p>
+           <p>Nous avons mis en place des mesures de sécurité pour éviter que vos données personnelles ne soient accidentellement perdues, utilisées ou consultées de manière non autorisée, modifiées ou divulguées.En outre, nous limitons l'accès à vos données personnelles aux employés, agents, sous-traitants et autres tiers qui ont un besoin professionnel de les connaître. Ils ne traiteront vos données personnelles que sur nos instructions et sont soumis à un devoir de confidentialité.Nous avons mis en place des procédures pour traiter toute violation présumée de données personnelles et nous vous informerons, ainsi que tout organisme réglementaire le cas échéant, d'une violation lorsque nous sommes légalement tenus de le faire.</p>
+           <p class="confidentialite-titre">9. Vos droits légaux</p>
+           <p>A. Il est important que les données personnelles que nous détenons à votre sujet soient exactes et à jour. Veuillez nous tenir informés si vos données personnelles changent au cours de votre relation avec nous. B. Dans certaines circonstances, vous avez des droits en vertu des lois sur la protection des données en ce qui concerne vos données personnelles, y compris le droit d'accéder, de corriger ou de supprimer vos données personnelles, de vous opposer au traitement de vos données personnelles ou de le restreindre, le droit de demander que nous transférions vos données personnelles à un tiers et de vous désabonner de nos courriels et de nos bulletins d'information. C. Lorsque vous souhaitez supprimer définitivement vos données de notre site web et d'autres applications, vous pouvez choisir l'option de fermeture de votre compte. Vous pouvez fermer votre compte en cliquant sur ce lien et en suivant les instructions. Une fois votre compte fermé, tous les produits et services auxquels vous accédez par le biais de votre compte ne seront plus disponibles. D. Nous pouvons refuser d'accéder à votre demande si elle est déraisonnable ou si vous n'avez pas fourni les informations supplémentaires nécessaires pour confirmer votre identité</p>
+            
+        </div>
+
+    </div>
+            <!---------------- Debut Section Footer ---------------------->  
+            <footer>
+                <div class="footer-container">
+                    <div class="container">
+                        <div class="footer-personnal-info mb-5">
+                            <div class="row pt-5 pb-4 px-5">
+                                <div class="col-xl-4 col-md-4 mb-2 personnal-info-item">
+                                    <div class="single-cta">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div class="cta-text">
+                                            <h4>Localisation</h4>
+                                            <span>DAKAR ,SENEGAL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-4 mb-2 personnal-info-item ">
+                                    <div class="single-cta">
+                                        <i class="fas fa-phone"></i>
+                                        <div class="cta-text">
+                                            <h4>Nous Contacter</h4>
+                                            <span>(+221)774066588</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-4 personnal-info-item">
+                                    <div class="single-cta">
+                                        <i class="far fa-envelope-open"></i>
+                                        <div class="cta-text">
+                                            <h4>Mail </h4>
+                                            <span>djibysec8@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="footer-content mb-5">
+                            <div class="row">
+                                <div class="col-md-4 px-5">
+                                    <div class="daaratech">
+                                        <div class="footer-logo fw-bold text-center">
+                                            <a href="../accueil/accueil.html" class="fs-3 mb-4"> DAARAY <br>TECHNOLOGIE</a>
+                                        </div>
+                                        <div class="footer-text ">
+                                            <p class="footer-text-item">Daraay Technologie ,une société <br> de développemnet et d'ingérie  <br>informatique .</p>
+                                        </div>
+                                        <div class="footer-social-icon fw-bold mb-5">
+                                            <h4 class="fw-bold">Suivez-nous</h4>
+                                            <p>
+                                                <button class="me-2 border-0"><i class="fab fa-facebook-f facebook-bg fw-bold"></i></button>
+                                                <button class="me-2 border-0"><i class="fab fa-twitter twitter-bg fw-bold"></i></button>
+                                                <button class="me-2 border-0"><i class="fab fa-google-plus-g google-bg fw-bold"></i></button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 px-5">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-heading fw-bold footer-link">
+                                            <h3>Liens- utiles</h3>
+                                            <div class="line"></div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="../contact/contact.html">Contact</a></li>
+                                            <li><a href="../apropos/apropos.html">A propos</a></li>
+                                            <li><a href="../politique-de-confidentialités/politique-de-confidentialités.html">Politique de Confidentialités</a></li>
+                                            <li><a href="../condition-générale-d'utlisation/condition-générale-d'utlisation.html">Condition générale d'utlisation</a></li>
+                                            <li><a href="../politique-d'utilisation-des-cookies/politique-d'utilisation-des-cookies.html">Politique  d'utilisation des cookies </a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 px-5">
+                                    <!---------------- Debut Section Newsletters ------------->
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-heading">
+                                            <h3>Newsletter</h3>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="footer-text mb-25">
+                                            <p>N'oublier pas de vous souscrire à notre newsletter.</p>
+                                        </div>
+    
+                                        <div class="input-group subscribe-form mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Adress " id="email">
+                                            <button class="btn" type="button" id="button-send" onclick="inscription()"><i class="bi bi-send-fill"></i></button>
+                                        </div>
+                                    </div>
+                                    <!--------------- Fin Section Newsletters --------------->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!----------------Fin Section Footer ------------------->
+</body>
+</html>

@@ -1,0 +1,123 @@
+:root{
+    --main-color:#E94D1A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.detail i{
+    color: var(--main-color);
+}
+
+.link i{
+    /* color: var(--main-color); */
+    margin-right: 4vh;
+    font-size: 4vh;
+}
+
+
+/* Ajout commentaire:  */
+.ajout-commentaire form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 20px 20px #f5f5f5;
+    /* background: #eee; */
+  }
+  .ajout-commentaire input,
+  .ajout-commentaire textarea {
+    width: 90%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background: #F6F6F6;
+    outline: none;
+    border-radius: 5vh;
+  }
+
+ 
+.ajout-commentaire button{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 4vh;
+    padding: 1vh 4vh;
+}
+
+
+/* Liste commentaire:  */
+
+.liste-commaitare{
+    background-color: var(--main-color);
+    opacity: 0.7;
+    padding: 4vh;
+} 
+
+.commentaire{
+    background-color: #F6F6F6;
+    padding: 2vh;
+    /* margin-bottom: 4vh; */
+}
+
+.commentaire button{
+    width: 10vh;
+    height: 10vh;
+    background-color: #E94D1A;
+    /* font-size: 4vh; */
+    color: white;
+}
+
+/* Stylisation des champs en commun  */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .modal-content {
+    margin: 50px auto;
+    border: 1px solid #999;
+    width: 60%;
+  }
+
+.modal span {
+    color: #666;
+    display: block;
+    padding: 0 0 5px;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+button.button {
+    background: none;
+    border-top: none;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    padding: 0 0 3px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+button.button:hover {
+    /* border-bottom: #a99567 1px solid; */
+    color: var(--main-color);
+}
