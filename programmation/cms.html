@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+    <script src="videos.js"></script>
+    <script src="design.js"></script>
+    <link rel="stylesheet" href="cms.css">
+    <link rel="stylesheet" href="../header-footer/header-footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="../header-footer/header-footer.js"></script>
+
+    <!-- Link script popup validation  -->
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="../Formation_Securite/Securite.js"></script>
+    
+</head>
+<body>  
+  <!------------------Début Section Container_Menu --------------------------->
+    <div class="Container_Menu">
+        <!-- Barre de progression  -->
+        <div id="progress">
+            <span id="progressValue">&#x1F815</span>
+        </div>
+        <!-- Fin barre de progression  -->
+
+        <!------------------Debut Section Prémier Menu------------------------->
+        <div class="FirstMenu">
+            <ul>
+                <li class="logo"><a href="../accueil/accueil.html"><img src="../header-footer/images/logo.png" alt="">Darray Technologie</a></li>
+                <li class="fs-5 personnal-info">
+                  <i class="bi bi-telephone"></i>
+                  <span>(+221) 774065868</span>
+                </li>
+
+                <li class="fs-5 personnal-info">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span>DAKAR, SENEGAL</span>
+                </li>
+                
+                <li class="fs-5 personnal-info">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span class="except">djibysec8@gmail.com</span>
+                </li>
+                
+                <!-- Les icones réseaux sociaux -->
+                <li class="social-media">
+                  <i class="fa-brands fa-facebook-f fs-3 me-4"></i>
+                  <i class="fa-brands fa-twitter fs-3 me-4"></i>
+                  <i class="fa-brands fa-google-plus-g fs-3"></i>
+                </li>
+
+                <!-- Icone hamburger -->
+                <i class="fa-solid fa-bars iconeBarRight" id="cach" style="font-size: 30px;" onclick="afficher()"></i>
+               
+            </ul>
+        </div>
+        <!------------------------ Fin Section Prémier Menu --------------------->
+        
+        <!------------------------Début Section Sidebar Bar Accordion --------------------->
+        <div id="MenuSec" >
+            <br><br>
+            <ul>
+              <li><a href="../apropos/apropos.html">A propos</a></li>
+              <li><a href="../article/article.html">Articles</a></li>
+              <li><a href="../contact/contact.html">Contact</a></li>
+              <li><a href="../service/service.html">Services</a></li>
+              <li><a href="../formation/formation.html">Formation</a></li>
+            </ul>
+            <ul>
+                <li><span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span></li>
+            </ul>
+        </div>
+        <!-------------------------Fin Section Sidebar Bar Accordion ----------------------->
+        
+        <!-------------------------- Début Section SecondMenu ---------------------------->
+        <div class="SecondMenu">
+            <div class="SecondMenu_Image">
+                <img src="../header-footer/images/logo.png" alt="">
+            </div>
+            <div class="SecondMenu_Formation">
+                <ul>
+                  <li><a href="../apropos/apropos.html">A propos</a></li>
+                  <li><a href="../article/article.html">Articles</a></li>
+                  <li><a href="../contact/contact.html">Contact</a></li>
+                  <li><a href="../service/service.html">Services</a></li>
+                  <li><a href="../formation/formation.html">Formation</a></li>
+                </ul>
+            </div>
+        </div>
+        <!---------------Fin Section du Second Menu --------------------------->
+
+        
+
+
+        <!---------------Debut Section de votre Contenu ------------------>
+        
+<!-- debut Banierre  -->
+<div class="banierre-service">
+</div>
+<div class="link-banierre">
+    <h4> 
+        <a href="../accueil/accueil.html">Accueil</a> 
+        <span class="link-active"><i class="bi bi-chevron-double-right"></i> Formation</span>
+        
+    </h4>
+</div>
+<!-- Fin banierre  -->
+
+<div class="container" id="design">
+    <div class="main-video-content">
+        <video src="" controls muted autoplay></video>
+        <label class="main-info"></label>
+    </div>
+    <div class="playlist"></div>
+</div>  
+<script src="videos.js" type="module"></script>
+
+<div class="commentaire">
+    <div><i class="fa-solid fa-message" style="color: #d35c0d;"></i>&nbsp;commentaire</div>
+    <div><a href="">Voir plus...</a></div>
+    <div><a href="">Ajouter un commentaire</a></div>
+</div><hr>
+<div class="message">
+    <div class="profil"><img src="../designart/image/am.PNG" class="rounded-circle" alt="..."> </div>
+    <div class="commen"><h5>Marie Laure Coly <br>28/10/2020 <br> Je trouve vos formations hyper important le contenu est tres riche</h5>  
+    </div>        
+</div> <hr style="padding: 1px; background-color: #d35c0d;">
+<div class="message">
+    <div class="profil"><img src="../designart/image/am.PNG" class="rounded-circle" alt="..."> </div>
+    <div class="commen"><h5>Marie Laure Coly <br>28/10/2020 <br> Je trouve vos formations hyper important le contenu est tres riche</h5>  
+    </div>        
+</div> <hr style="padding: 1px; background-color: #d35c0d;">
+<div class="message">
+    <div class="profil"><img src="../designart/image/am.PNG" class="rounded-circle" alt="..."> </div>
+    <div class="commen"><h5>Marie Laure Coly <br>28/10/2020 <br> Je trouve vos formations hyper important le contenu est tres riche</h5>  
+    </div>        
+</div> <hr style="padding: 1px; background-color: #d35c0d;">
+<div class="autres">
+    <h1>Autres Formations</h1><hr style="width: 5%; margin-left: 50%; padding: 2px; background-color: #f86706; border: none;">
+    <div class="forma">
+        <div class="item1"><a href="../designart/"><div class="libele1">design Graphique</div></a></div>
+        <div class="item2"><a href=""><div class="libele2">Prorammation</div></a></div>
+        <div class="item3"><a href=""><div class="libele3">CMS</div></a></div>
+    </div>
+</div>
+        <!-- <div class="Votre_Contenu_ici">
+            <h1 style="text-align: center;">Le corps de l'accueil</h1>
+            <br><br><br><br> -->
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ab natus provident! Deserunt illum, quo fugiat reiciendis, hic eaque deleniti, delectus dolore omnis repellat in neque fuga veniam minus vel?
+            Doloremque ad mollitia corrupti. Maxime, vel dolores! Voluptatum, similique dignissimos. Esse sint ullam natus. Voluptates labore vel atque, ducimus voluptas, sapiente alias optio totam reiciendis officiis inventore, et recusandae architecto.
+            Delectus, sapiente dicta veniam praesentium adipisci omnis ipsam tempora numquam exercitationem? Itaque ipsum perspiciatis quasi. Est dolorem itaque hic autem tempora ratione voluptatum, voluptate sit debitis excepturi quod veritatis molestias!
+            Numquam voluptates incidunt voluptas dignissimos. Minima neque, ex dignissimos repellat libero nemo consequuntur. Consequuntur dignissimos earum fuga fugit deserunt exercitationem aperiam repellendus sequi autem? Odio dolore quidem officiis quaerat magni?
+            Ab accusamus quas architecto qui sunt quia fuga ea magni atque! Odio veritatis facilis voluptas, cum eos impedit et enim itaque delectus non numquam, odit, pariatur autem consequatur sunt sit.
+            Molestiae dolorem soluta officiis, nihil cumque minima et earum reiciendis maiores explicabo quod vero! Repellendus similique soluta excepturi voluptas fugit porro ea quia dolor, voluptatum, molestias cumque natus. Doloribus, voluptate?
+            Dolores velit molestias officiis praesentium architecto temporibus natus excepturi pariatur ducimus neque? Sequi doloribus, repellat sit qui commodi recusandae, tenetur voluptas ea ipsum totam tempore beatae atque amet et a.
+            Aspernatur adipisci error ipsum dolore distinctio sapiente corporis temporibus accusantium placeat reiciendis facilis veniam eligendi hic nemo quia repudiandae nihil voluptas, eos similique, cum porro quae autem harum! Recusandae, sit!
+            Repellendus quisquam animi voluptatum ea sit? Quibusdam nesciunt asperiores incidunt ab rem numquam quas labore suscipit. Dolores deserunt, praesentium obcaecati debitis delectus, assumenda repudiandae recusandae vel nulla, tempore esse doloribus?
+            Facere numquam cum pariatur quis quidem itaque vero veniam illo eius ullam velit quaerat tempore reiciendis maiores debitis sunt, repellat laboriosam saepe in aspernatur, nostrum modi. Expedita sequi soluta nihil?</p>
+        </div> -->
+        
+        <!------------Fin Section de votre Contenu ------------------>
+        
+        
+        <!---------------- Debut Section Footer ---------------------->  
+        <footer>
+            <div class="footer-container">
+                <div class="container">
+                    <div class="footer-personnal-info mb-5">
+                        <div class="row pt-5 pb-4 px-5">
+                            <div class="col-xl-4 col-md-4 mb-2 personnal-info-item">
+                                <div class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="cta-text">
+                                        <h4>Localisation</h4>
+                                        <span>DAKAR ,SENEGAL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-2 personnal-info-item ">
+                                <div class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Nous Contacter</h4>
+                                        <span>(+221)774066588</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 personnal-info-item">
+                                <div class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>Mail </h4>
+                                        <span>djibysec8@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-content mb-5">
+                        <div class="row">
+                            <div class="col-md-4 px-5">
+                                <div class="daaratech">
+                                    <div class="footer-logo fw-bold text-center">
+                                        <a href="../accueil/accueil.html" class="fs-3 mb-4"> DAARAY <br>TECHNOLOGIE</a>
+                                    </div>
+                                    <div class="footer-text ">
+                                        <p class="footer-text-item">Daraay Technologie ,une société <br> de développemnet et d'ingérie  <br>informatique .</p>
+                                    </div>
+                                    <div class="footer-social-icon fw-bold mb-5">
+                                        <h4 class="fw-bold">Suivez-nous</h4>
+                                        <p>
+                                            <button class="me-2 border-0"><i class="fab fa-facebook-f facebook-bg fw-bold"></i></button>
+                                            <button class="me-2 border-0"><i class="fab fa-twitter twitter-bg fw-bold"></i></button>
+                                            <button class="me-2 border-0"><i class="fab fa-google-plus-g google-bg fw-bold"></i></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 px-5">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading fw-bold footer-link">
+                                        <h3>Liens- utiles</h3>
+                                        <div class="line"></div>
+                                    </div>
+                                    <ul>
+                                        <li><a href="../contact/contact.html">Contact</a></li>
+                                        <li><a href="../apropos/apropos.html">A propos</a></li>
+                                        <li><a href="../politique-de-confidentialités/politique-de-confidentialités.html">Politique de Confidentialités</a></li>
+                                        <li><a href="../condition-générale-d'utlisation/condition-générale-d'utlisation.html">Condition générale d'utlisation</a></li>
+                                        <li><a href="../politique-d'utilisation-des-cookies/politique-d'utilisation-des-cookies.html">Politique  d'utilisation des cookies </a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 px-5">
+                                <!---------------- Debut Section Newsletters ------------->
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Newsletter</h3>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="footer-text mb-25">
+                                        <p>N'oublier pas de vous souscrire à notre newsletter.</p>
+                                    </div>
+
+                                    <div class="input-group subscribe-form mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Adress " id="email">
+                                        <button class="btn" type="button" id="button-send" onclick="inscription()"><i class="bi bi-send-fill"></i></button>
+                                    </div>
+                                </div>
+                                <!--------------- Fin Section Newsletters --------------->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!----------------Fin Section Footer ------------------->
+    
+    
+    </div>
+     <!------------------Fin Section Container_Menu --------------------------->
+</body>
+</html>

@@ -1,0 +1,22 @@
+.modal-content{
+
+    /* border: 1px solid #000; */
+}
+.modal{
+    border: 1px solid #000;  
+    width: 30%;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+input{
+    width: 60%;
+    border-radius: 20px;
+    padding: 7px;
+}
+button{
+    color: white;
+    background-color: orangered;
+    width: 40%;
+    border: none;
+}
