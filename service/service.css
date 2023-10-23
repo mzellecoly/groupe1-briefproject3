@@ -170,7 +170,26 @@ body{
         margin-left: -13vh;
         margin-top: 12vh;
     }
+    
+
+    .partenaires h3{
+        margin-top: 15vh;
+    }
+    .partenaire-img img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 1px solid var(--main-color);
+        margin: 0 auto;
+        font-weight: bold;
+        /* position: relative; */
+        /* animation: mymove 5s infinite; */
+    }
+    
+    
 }
+
+
 @media screen and (max-width: 700px) {
     .separation{
         rotate: 0deg;
