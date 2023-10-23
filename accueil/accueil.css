@@ -86,14 +86,18 @@ section .container{
     }
 
 }
+
+
 .example {
-    position: relative;
-    padding: 0;
+    /* position: relative; */
+    /* padding: 0; */
     width: 300px;
     cursor: pointer;
     overflow: hidden;
     /* border: 1px solid #000; */
     border-radius: 20px;
+    margin: 0 10vh;
+    text-align: center;
   }
   .content {
     opacity: 0;
@@ -113,6 +117,7 @@ section .container{
     text-align: center;
   }
 
+  
   .example .content:hover {
     opacity: 1;
   }
