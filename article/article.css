@@ -35,6 +35,18 @@ body{
     color: var(--orange);
     font-size: 30px;
 }
+.article-pagination1{
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    padding: 5px 7px;
+}
+.article-pagination2{
+    background-color: var(--gris);
+    color: var(--orange);
+    font-weight: bold;
+    padding: 5px 7px;
+}
 .article-search input{
     width: 300px;
 }
