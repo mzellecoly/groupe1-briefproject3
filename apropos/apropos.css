@@ -1,0 +1,178 @@
+*{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.banierre-service{
+    background-image: url('https://img.freepik.com/photos-gratuite/programmeur-assis-au-bureau-plusieurs-ecrans-executant-du-code-parlant-collegue-algorithme-intelligence-artificielle-developpeurs-logiciels-realisant-projet-innovant-intelligence-artificielle_482257-40606.jpg?size=626&ext=jpg&ga=GA1.1.869340897.1689281166&semt=sph');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+.link-banierre h4{
+    margin-left: 5vh;
+    position: relative;
+    top: -15vh;
+}
+
+.link-banierre a{
+    color: black;
+    text-decoration: none;
+}
+
+.link-banierre .link-active{
+    color: var(--main-color);
+}
+.about-title {
+    color: #E94D1A;
+    font-weight: bold;
+}
+.about-text {
+    border-bottom: 2px solid #E94D1A;
+    width: 50%;
+    margin-bottom: 10px;
+
+}
+.carre {
+    -webkit-clip-path: inset(5% 20% 15% 0);
+clip-path: inset(5% 20% 15% 0);
+background-color: #E94D1A;
+color: #fff;
+width: 100px;
+height: 100px;
+float: right;
+margin-right: -100px;
+
+/* margin-left: -5vh; */
+position: justify;
+}
+ /* #Carre {
+    /* background: #E94D1A; */
+    /* border: 20px solid #E94D1A; */
+    /* width: 100%;
+    border: 2px solid #E94D1A;
+    margin:  5px auto;
+    border-radius: 10 20px 10 20px;
+    text-align: center; */
+    
+/* } */
+.about-para { 
+    /* width: 75%; */
+    margin: 2px auto;
+    /* border: 1px solid #E94D1A; */
+    border: none;
+    border-radius: 0 55% 0 55%;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 10 10 10 10 gray;
+    padding: 2px;
+    float: right;
+    position: relative;
+    z-index: 1;
+    margin-top: -90px;
+    /* position: relative;
+   */
+ /* team debut */
+   
+}
+
+.about-para span {
+    font-size: 10px;
+    font-weight: bold;
+}
+.about-bottom {
+    margin: auto 0 ;
+}
+
+.about-bottom #about-temoin{
+    color: #E94D1A;
+    text-align: center;
+
+
+}
+
+/* 
+.about-bottom #about-temoin p{
+   
+    text-align: center;
+
+
+} */
+
+.about-temoin-img img{
+    object-fit: cover;
+   
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px gray;
+    
+    height: 40px;
+    width: 40px;
+    /* margin-right: auto; */
+    /* margin-top: 20px ; */
+
+}
+.about-temoin-img span{
+    
+    /* margin-right: auto; */
+    /* margin-top: 20px ; */
+
+}
+.about-text-bottom {
+    margin-top: 80px ;
+    margin-left: 50px ;
+    height: 10vh;
+}
+.about-text-bottom #about-span {
+    margin-top: 150px ;
+    margin-left: 50px ;
+    height: 10vh;
+}
+
+.left-text #about-span {
+    /* margin-right: 10px; */
+    /* height: -100vh; */
+    /* margin-bottom: x ; */
+    margin-top: -150px ;
+} 
+
+
+
+@media only screen and (min-width: 760px) and (max-width:930px) {
+    .about-text{
+        display: flex!important;
+        justify-content: space-between ;
+        flex-direction: column;
+    }
+
+    .about-para { 
+        /* width: 75%; */
+        margin: 2px auto;
+        /* border: 1px solid #E94D1A; */
+        border: none;
+        border-radius: 0 55% 0 55%;
+        text-align: center;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 10 10 10 10 gray;
+        padding: 2px;
+        float: left;
+        position: relative;
+        height: 10vh;
+        /* z-index: 1; */
+        
+    }
+    
+
+    
+}
+
+@media only screen and (min-width: 448px)  {
+    .about-text{
+        display: flex!important;
+        justify-content: space-between ;
+        flex-direction: row;
+    }
+
+
+}

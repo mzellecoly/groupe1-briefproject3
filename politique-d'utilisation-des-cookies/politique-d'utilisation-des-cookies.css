@@ -1,0 +1,16 @@
+.cookie-line{
+    background-color: var(--orange);
+    width: 10%;
+    height: 3px;
+    margin: 0 auto;
+}
+
+.cookie-form{
+    background-color: #E94D1A;
+    color: #E94D1A;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+}

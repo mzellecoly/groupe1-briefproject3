@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.condition-line{
+    background-color: var(--orange);
+    width: 10%;
+    height: 3px;
+    margin: 0 auto;
+}
+
+.condition-form{
+    background-color: #E94D1A;
+    color: #E94D1A;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.condition_utilisation h1{
+    border-bottom: 4px solid #e94d1a;
+    display: inline; 
+    justify-content: center !important;
+    align-items: center !important; 
+    text-align: center !important; 
+}
+
+.condition_utilisation p{
+    font-size: 20px;
+}
+.condition_utilisation span{
+    font-weight: bold;
+    font-size: 20px;
+}

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Lien booststrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+     crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+     crossorigin="anonymous"></script>
+      <!-- Bootstrap Icon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+<!-- Fin bootstrap Icon -->
+
+<!-- Fontawsome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="../Formation_Securite/Securite.js"></script>
+    <link rel="stylesheet" href="../header-footer/header-footer.css">
+    <script src="../header-footer/header-footer.js"></script>
+    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="../popudetailarticle/popupdetailartcile.css">
+    <script src="../popudetailarticle/detailarticle.js"></script>
+    <title>Document</title>
+</head>
+<body>
+      <!------------------Début Section Container_Menu --------------------------->
+      <div class="Container_Menu">
+        <!-- Barre de progression  -->
+        <div id="progress">
+            <span id="progressValue">&#x1F815</span>
+        </div>
+        <!-- Fin barre de progression  -->
+
+        <!------------------Debut Section Prémier Menu------------------------->
+        <div class="FirstMenu">
+            <ul>
+                <li class="logo"><a href="../accueil/accueil.html"><img src="../header-footer/images/logo.png" alt="">Darray Technologie</a></li>
+                <li class="personnal-info">
+                  <i class="bi bi-telephone"></i>
+                  <span>(+221) 774065868</span>
+                </li>
+
+                <li class="personnal-info">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span>DAKAR, SENEGAL</span>
+                </li>
+                
+                <li class="personnal-info">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span class="except">djibysec8@gmail.com</span>
+                </li>
+                
+                <!-- Les icones réseaux sociaux -->
+                <li class="social-media">
+                  <i class="fa-brands fa-facebook-f fs-5 me-4"></i>
+                  <i class="fa-brands fa-twitter fs-5 me-4"></i>
+                  <i class="fa-brands fa-google-plus-g fs-5"></i>
+                </li>
+
+                <!-- Icone hamburger -->
+                <i class="fa-solid fa-bars iconeBarRight" id="cach" style="font-size: 30px;" onclick="afficher()"></i>
+               
+            </ul>
+        </div>
+        <!------------------------ Fin Section Prémier Menu --------------------->
+        
+        <!------------------------Début Section Sidebar Bar Accordion --------------------->
+        <div id="MenuSec" >
+            <br><br>
+            <ul>
+              <li><a href="../apropos/apropos.html">A propos</a></li>
+              <li><a href="../article/article.html">Articles</a></li>
+              <li><a href="../contact/contact.html">Contact</a></li>
+              <li><a href="../service/service.html">Services</a></li>
+              <li><a href="../formation/formation.html">Formation</a></li>
+            </ul>
+            <ul>
+                <li><span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span></li>
+            </ul>
+        </div>
+        <!-------------------------Fin Section Sidebar Bar Accordion ----------------------->
+        
+        <!-------------------------- Début Section SecondMenu ---------------------------->
+        <div class="SecondMenu">
+            <div class="SecondMenu_Image">
+                <a href="../accueil/accueil.html"><img src="../header-footer/images/logo.png" alt=""></a>
+            </div>
+            <div class="SecondMenu_Formation">
+                <ul>
+                  <li><a href="../apropos/apropos.html">A propos</a></li>
+                  <li><a href="../article/article.html">Articles</a></li>
+                  <li><a href="../contact/contact.html">Contact</a></li>
+                  <li><a href="../service/service.html">Services</a></li>
+                  <li><a href="../formation/formation.html">Formation</a></li>
+                </ul>
+            </div>
+        </div>
+        <!---------------Fin Section du Second Menu --------------------------->
+
+    <div class="article-title d-flex justify-content-center">
+        <h1 class="text-center mt-5">Tous nos articles</h1>
+        <div class="article-form mt-5">g</div>
+    </div>
+    <div class="article-line"></div>
+    <div class="container">
+        <div class="row article">
+            <div class="col-lg-8 article-card my-5">
+                <!-- Article CMS  -->
+                <div class="card mb-5" style="width: 40rem;">
+                    <img class="card-img-top" src="https://img.freepik.com/photos-gratuite/personne-devant-ordinateur-travaillant-html_23-2150040428.jpg?size=626&ext=jpg&ga=GA1.1.12207566.1692912950&semt=sph" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-evenly">
+                            <p><i class="fa-regular fa-clock pe-2" style="color: #E94D1A;"></i>20 août 2023</p>
+                            <p><i class="fa-solid fa-user pe-2" style="color: #E94D1A;"></i>Par Djiby SECK</p>
+                        </div>
+                        <h5 class="article-titre card-title text-center">La découverte des CMS</h5>
+                        <p class="card-text">La découverte des CMS, ou systèmes de gestion de contenu, a révolutionné la façon dont les sites web sont créés, gérés et mis à jour. Un CMS est un logiciel qui permet de créer, éditer, organiser et publier du contenu sur un site web de manière intuitive, sans nécessiter des compétences avancées en programmation.</p>
+                      
+                        <!-- Icone commentaires  -->
+                        <p class="article-link">
+                            <button class="button me-3" data-modal="modalOne"><i class="bi bi-eye-fill"></i></button>
+                            <button class="button me-3" data-modal="modalTwo"><i class="bi bi-pencil-square"></i></button>
+                            <button class="button" data-modal="modalThree"><i class="bi bi-chat-left-text"></i></button>
+                        </p>
+
+                        <!-- Les Popups  -->
+                        <!-- Details commentaire :  -->
+                        <div id="modalOne" class="modal">
+                            <div class="modal-content">
+                            <div class="contact-form">
+                                <a class="close">&times;</a>
+                                <div class="container detail">
+                                <h1 class="fw-bold text-center mb-3">La découverte des CMS</h1>
+                                <img src="../header-footer/images/articlecms.png" alt="articlecms" height="600px" width="100%">
+                                <div class="d-flex justify-content-center mt-3 fs-5">
+                                    <p class="date d-flex me-5"> <span class="me-2"><i class="bi bi-clock"></i></span> <span>20 août 2023</span></p>
+                                    <p class="autheur d-flex"> <span class="me-2"><i class="bi bi-person"></i></span> <span>Djiby Seck</span></p>
+                                </div>
+                                <div class="desc">
+                                    <p class="fs-4">La découverte des CMS, ou systèmes de gestion de contenu, a révolutionné la façon dont les sites web sont créés, gérés et mis à jour. </p>
+                                    <p class="fs-4">Un CMS est un logiciel qui permet de créer, éditer, organiser et publier du contenu sur un site web de manière intuitive, sans nécessiter des compétences avancées en programmation.</p>
+                                    <p class="fs-4">Il permet à l'utilisateur de gérer son site Web sans nécessairement avoir besoin de connaissances en programmation, ce qui est souvent une caractéristique recherchée dans les petites et moyennes entreprises.</p>
+                                </div>
+                    
+                                <div class="partage mb-5">
+                                    <h4 class="fs-4 fw-bold">Partagez cet article</h4>
+                                    <div class="link">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Ajouter commentaire  -->
+                        <div id="modalTwo" class="modal">
+                            <div class="modal-content">
+                            <div class="container ajout-commentaire">
+                                <span class="close">&times;</span>
+                                <form action="">
+                                    <h2 class="mb-3 text-center">Laisser un commentaire</h2>
+                                    <div class="mb-3">
+                                        <label for="pseudo" class="form-label">Votre Pseudo</label>
+                                        <input type="text" class="form-control" id="pseudo" placeholder="Pseudo...">
+                                    </div>
+                                    <div class="mb-3">
+                                        <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+                                        <textarea class="form-control" id="message" placeholder="Votre commentaire ici..." rows="5"></textarea>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn fw-bold rounded-0" type="submit" onclick=ajouter()>Envoyer</button>
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Liste des commentaires  -->
+                        <div id="modalThree" class="modal">
+                            <div class="modal-content">
+                            <div class="liste-commaitare container">
+                                <span class="close">&times;</span>
+                                <div class="commentaire mb-3">
+                                    <div class="d-flex">
+                                        <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
+                                        <div class="ms-2">
+                                            <p>Marie Laure Coly</p>
+                                            <p>25/09/2023</p>
+                                        </div>
+                                    </div>
+                                    <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
+                                </div>
+                                <div class="commentaire mb-3">
+                                    <div class="d-flex">
+                                        <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
+                                        <div class="ms-2">
+                                            <p>Marie Laure Coly</p>
+                                            <p>25/09/2023</p>
+                                        </div>
+                                    </div>
+                                    <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
+                                </div>
+                                <div class="commentaire mb-3">
+                                    <div class="d-flex">
+                                        <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
+                                        <div class="ms-2">
+                                            <p>Marie Laure Coly</p>
+                                            <p>25/09/2023</p>
+                                        </div>
+                                    </div>
+                                    <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
+                                </div>
+                                <div class="commentaire">
+                                    <div class="d-flex">
+                                        <button class="pseudo rounded-circle border-0"><i class="bi bi-person-fill fs-1"></i></button>
+                                        <div class="ms-2">
+                                            <p>Marie Laure Coly</p>
+                                            <p>25/09/2023</p>
+                                        </div>
+                                    </div>
+                                    <p>Je trouve vos formations hyper interessantes et facile à comprendre</p>
+                                </div>
+                            </div>
+                    
+                            </div>
+                        </div>
+
+                        <!-- Script des popups  -->
+                        
+                    </div>
+                </div>
+                <!-- Fin article CMS  -->
+
+                <!-- Article dev  -->
+                <div class="card mb-5" style="width: 40rem;">
+                    <img class="card-img-top" src="https://img.freepik.com/photos-gratuite/concept-collage-html-css-personne_23-2150062008.jpg?size=626&ext=jpg&ga=GA1.1.12207566.1692912950&semt=sph" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-evenly">
+                            <p><i class="fa-regular fa-clock pe-2" style="color: #E94D1A;"></i>20 août 2023</p>
+                            <p><i class="fa-solid fa-user pe-2" style="color: #E94D1A;"></i>Par Djiby SECK</p>
+                        </div>
+                      <h5 class="article-titre card-title text-center">Devenir développeur web en 2023</h5>
+                      <p class="card-text">La découverte des CMS, ou systèmes de gestion de contenu, a révolutionné la façon dont les sites web sont créés, gérés et mis à jour. Un CMS est un logiciel qui permet de créer, éditer, organiser et publier du contenu sur un site web de manière intuitive, sans nécessiter des compétences avancées en programmation.</p>
+                      <p class="article-link">
+                        <button class="button me-3" data-modal="modalFour"><i class="bi bi-eye-fill"></i></button>
+                        <button class="button me-3" data-modal="modalTwo"><i class="bi bi-pencil-square"></i></button>
+                        <button class="button" data-modal="modalThree"><i class="bi bi-chat-left-text"></i></button>
+                      </p>
+                  
+                      <!-- Details commentaire article dev :  -->
+                      <div id="modalFour" class="modal">
+                        <div class="modal-content">
+                          <div class="contact-form">
+                            <a class="close">&times;</a>
+                            <div class="container detail">
+                              <h1 class="fw-bold text-center mb-3 mt-3">Devenir développeur web en 2023</h1>
+                              <img src="https://img.freepik.com/photos-gratuite/concept-collage-html-css-personne_23-2150062008.jpg?size=626&ext=jpg&ga=GA1.1.12207566.1692912950&semt=sph" alt="articlecms" height="600px" width="100%">
+                              <div class="d-flex justify-content-center mt-3 fs-5">
+                                  <p class="date d-flex me-5"> <span class="me-2"><i class="bi bi-clock"></i></span> <span>20 août 2023</span></p>
+                                  <p class="autheur d-flex"> <span class="me-2"><i class="bi bi-person"></i></span> <span>Djiby Seck</span></p>
+                              </div>
+                              <div class="desc">
+                                  <p class="fs-4">Le développeur web réalise l’ensemble des fonctionnalités techniques d’un site ou d’une application web. Technicien ou ingénieur, il ou elle conçoit des sites sur mesure ou adapte des solutions techniques existantes en fonction du projet et de la demande du client. </p>
+                                  <p class="fs-4">À partir du cahier des charges rédigé par le chef de projet en fonction des désirs du client, le développeur web analyse les besoins, choisit la solution technique la mieux adaptée et développe les fonctionnalités du site ou de l’application web. Pour cette dernière étape, il rédige des lignes de code.</p>
+                                  <p class="fs-4">Le développeur web peut aussi apporter des solutions aux problèmes présents dans un site déjà en ligne et détectés par le client ou par les internautes. </p>
+                              </div>
+                  
+                              <div class="partage mb-5">
+                                  <h4 class="fs-4 fw-bold">Partagez cet article</h4>
+                                  <div class="link">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                      <i class="fa-brands fa-twitter"></i>
+                                      <i class="bi bi-instagram"></i>
+                                      <i class="fa-brands fa-linkedin-in"></i>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    
+                    </div>
+                </div>
+                <!-- Fin article Dev  -->
+
+                <!-- Article Veille  -->
+                <div class="card mb-5" style="width: 40rem;">
+                    <img class="card-img-top" src="https://img.freepik.com/photos-gratuite/personne-travaillant-html-ordinateur_23-2150038846.jpg?size=626&ext=jpg&ga=GA1.1.12207566.1692912950&semt=ais" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-evenly">
+                            <p><i class="fa-regular fa-clock pe-2" style="color: #E94D1A;"></i>20 août 2023</p>
+                            <p><i class="fa-solid fa-user pe-2" style="color: #E94D1A;"></i>Par Djiby SECK</p>
+                        </div>
+                        <h5 class="article-titre card-title text-center">Comment je fais ma  veille ?</h5>
+                        <p class="card-text">La découverte des CMS, ou systèmes de gestion de contenu, a révolutionné la façon dont les sites web sont créés, gérés et mis à jour. Un CMS est un logiciel qui permet de créer, éditer, organiser et publier du contenu sur un site web de manière intuitive, sans nécessiter des compétences avancées en programmation.</p>
+                        
+                        <p class="article-link">
+                            <button class="button me-3" data-modal="modalFive"><i class="bi bi-eye-fill"></i></button>
+                            <button class="button me-3" data-modal="modalTwo"><i class="bi bi-pencil-square"></i></button>
+                            <button class="button" data-modal="modalThree"><i class="bi bi-chat-left-text"></i></button>
+                        </p>
+                    
+                        <!-- Details commentaire veille :  -->
+                        <div id="modalFive" class="modal">
+                            <div class="modal-content">
+                            <div class="contact-form">
+                                <a class="close">&times;</a>
+                                <div class="container detail">
+                                <h1 class="fw-bold text-center mb-3 mt-3">Comment je fais ma  veille ?</h1>
+                                <img src="../header-footer/images/articleveille.png" alt="articlecms" height="600px" width="100%">
+                                <div class="d-flex justify-content-center mt-3 fs-5">
+                                    <p class="date d-flex me-5"> <span class="me-2"><i class="bi bi-clock"></i></span> <span>20 août 2023</span></p>
+                                    <p class="autheur d-flex"> <span class="me-2"><i class="bi bi-person"></i></span> <span>Djiby Seck</span></p>
+                                </div>
+                                <div class="desc">
+                                    <p class="fs-4">Le développeur web réalise l’ensemble des fonctionnalités techniques d’un site ou d’une application web. Technicien ou ingénieur, il ou elle conçoit des sites sur mesure ou adapte des solutions techniques existantes en fonction du projet et de la demande du client. </p>
+                                    <p class="fs-4">À partir du cahier des charges rédigé par le chef de projet en fonction des désirs du client, le développeur web analyse les besoins, choisit la solution technique la mieux adaptée et développe les fonctionnalités du site ou de l’application web. Pour cette dernière étape, il rédige des lignes de code.</p>
+                                    <p class="fs-4">Le développeur web peut aussi apporter des solutions aux problèmes présents dans un site déjà en ligne et détectés par le client ou par les internautes. </p>
+                                </div>
+                    
+                                <div class="partage mb-5">
+                                    <h4 class="fs-4 fw-bold">Partagez cet article</h4>
+                                    <div class="link">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <!-- Fin article veille  -->
+                <div class="detformation-pagination pt-5 text-center gap-3">
+                    <span class=" article-pagination1">1</span>
+                    <span class=" article-pagination2">2</span>
+                    <span class=" article-pagination2">3</span>
+                    <span class="article-pagination2"><i class="fa-solid fa-chevron-right" style="color: #E94D1A;"></i></span>
+                </div>
+            </div>
+            <div class="col-lg-4 my-5" style="background-color: #f6f6f6; height: 190vh;">
+                <div class="text-center mt-4 article-search">
+                    <input type="text" name="" id="" placeholder="Rechercher ....">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #E94D1A; background-color: white;"></i>
+                </div>
+                <div class="article-categorie">
+                    <h4 class="mt-4">Catégories</h4>
+                    <div class="article-categorie-line"></div>
+                    <div class="mt-4 article-categorie-item">
+                        <p><span><i class="fa-solid fa-chevron-right" style="color: #E94D1A;"></i></span> <span>HTML & CSS</span></p>
+                        <p><span><i class="fa-solid fa-chevron-right" style="color: #E94D1A;"></i></span> <span>Javascript</span></p>
+                        <p><span><i class="fa-solid fa-chevron-right" style="color: #E94D1A;"></i></span> <span>Gestion de projet</span></p>
+                        <p><span><i class="fa-solid fa-chevron-right" style="color: #E94D1A;"></i></span> <span>Design & art</span></p>
+                        <p><span><i class="fa-solid fa-chevron-right" style="color: #E94D1A;"></i></span> <span>Autres</span></p>
+                    </div>
+                    <h4 class="mt-4">Nouveautés</h4>
+                    <div class="article-categorie-line"></div>
+                    <div class="nouveaute">
+                        <div class="nouveaute-item mt-4 d-flex">
+                            <div class="nouveaute-item-img">
+                                <img src="https://img.freepik.com/photos-gratuite/contexte-energie-nucleaire-ia-innovation-future-technologie-rupture_53876-129783.jpg?size=626&ext=jpg&ga=GA1.1.12207566.1692912950&semt=sph" alt="">
+                            </div>
+                            <div class="nouveaute-item-para">
+                                <p class="container">Javascript le langage hybride et modulaire</p>
+                                <p class="container"><i class="fa-solid fa-calendar-days pe-3" style="color: #E94D1A;"></i>24 septembre 2023</p>
+                            </div>
+                        </div>
+                        <div class="nouveaute-item mt-2 d-flex">
+                            <div class="nouveaute-item-img">
+                                <img src="https://img.freepik.com/vecteurs-libre/fond-technologie-reseau-connexion-mondiale-numerique_1017-23324.jpg?size=626&ext=jpg&ga=GA1.1.12207566.1692912950&semt=sph" alt="">
+                            </div>
+                            <div class="nouveaute-item-para">
+                                <p class="container">Javascript le langage hybride et modulaire</p>
+                                <p class="container"><i class="fa-solid fa-calendar-days pe-3" style="color: #E94D1A;"></i>24 septembre 2023</p>
+                            </div>
+                        </div>
+                        <div class="nouveaute-item mt-2 d-flex">
+                            <div class="nouveaute-item-img">
+                                <img src="https://img.freepik.com/photos-premium/serveurs-arriere-plan-technologique-bleu-clair-generes-par-ia_551405-3536.jpg?size=626&ext=jpg&ga=GA1.1.12207566.1692912950&semt=sph" alt="">
+                            </div>
+                            <div class="nouveaute-item-para">
+                                <p class="container">Javascript le langage hybride et modulaire</p>
+                                <p class="container"><i class="fa-solid fa-calendar-days pe-3" style="color: #E94D1A;"></i>24 septembre 2023</p>
+                            </div>
+                        </div>
+                        <div class="nouveaute-item mt-2 d-flex">
+                            <div class="nouveaute-item-img">
+                                <img src="https://img.freepik.com/photos-premium/mains-du-robot-homme-touchant-future-interface-connexion-reseau-virtuel-mondial_34200-371.jpg?size=626&ext=jpg&ga=GA1.1.12207566.1692912950&semt=sph" alt="">
+                            </div>
+                            <div class="nouveaute-item-para">
+                                <p class="container">Javascript le langage hybride et modulaire</p>
+                                <p class="container"><i class="fa-solid fa-calendar-days pe-3" style="color: #E94D1A;"></i>24 septembre 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="mt-4">Archives</h4>
+                    <div class="article-categorie-line"></div>
+                    <div class="mt-4 article-categorie-item">
+                        <p><span><i class="fa-solid fa-chevron-right" style="color: #E94D1A;"></i></span> <span>Avril 2023</span></p>
+                        <p><span><i class="fa-solid fa-chevron-right" style="color: #E94D1A;"></i></span> <span>Juillet 2023</span></p>
+                        <p><span><i class="fa-solid fa-chevron-right" style="color: #E94D1A;"></i></span> <span>Septembre</span></p>
+                    </div>
+                    <h4 class="mt-4">Tags</h4>
+                    <div class="article-categorie-line"></div>
+                    <div class="d-flex justify-content-evenly article-tag mt-4">
+                        <p>Formations</p>
+                        <p>Site web</p>
+                        <p>Digital</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly article-tag">
+                        <p>Web</p>
+                        <p>Mobile</p>
+                        <p>Formations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+            <!---------------- Debut Section Footer ---------------------->  
+            <footer>
+                <div class="footer-container">
+                    <div class="container">
+                        <div class="footer-personnal-info mb-5">
+                            <div class="row pt-5 pb-4 px-5">
+                                <div class="col-xl-4 col-md-4 mb-2 personnal-info-item">
+                                    <div class="single-cta">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div class="cta-text">
+                                            <h4>Localisation</h4>
+                                            <span>DAKAR ,SENEGAL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-4 mb-2 personnal-info-item ">
+                                    <div class="single-cta">
+                                        <i class="fas fa-phone"></i>
+                                        <div class="cta-text">
+                                            <h4>Nous Contacter</h4>
+                                            <span>(+221)774066588</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-4 personnal-info-item">
+                                    <div class="single-cta">
+                                        <i class="far fa-envelope-open"></i>
+                                        <div class="cta-text">
+                                            <h4>Mail </h4>
+                                            <span>djibysec8@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="footer-content mb-5">
+                            <div class="row">
+                                <div class="col-md-4 px-5">
+                                    <div class="daaratech">
+                                        <div class="footer-logo fw-bold text-center">
+                                            <a href="../accueil/accueil.html" class="fs-3 mb-4"> DAARAY <br>TECHNOLOGIE</a>
+                                        </div>
+                                        <div class="footer-text ">
+                                            <p class="footer-text-item">Daraay Technologie ,une société <br> de développemnet et d'ingérie  <br>informatique .</p>
+                                        </div>
+                                        <div class="footer-social-icon fw-bold mb-5">
+                                            <h4 class="fw-bold">Suivez-nous</h4>
+                                            <p>
+                                                <button class="me-2 border-0"><i class="fab fa-facebook-f facebook-bg fw-bold"></i></button>
+                                                <button class="me-2 border-0"><i class="fab fa-twitter twitter-bg fw-bold"></i></button>
+                                                <button class="me-2 border-0"><i class="fab fa-google-plus-g google-bg fw-bold"></i></button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 px-5">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-heading fw-bold footer-link">
+                                            <h3>Liens- utiles</h3>
+                                            <div class="line"></div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="../contact/contact.html">Contact</a></li>
+                                            <li><a href="../apropos/apropos.html">A propos</a></li>
+                                            <li><a href="../politique-de-confidentialités/politique-de-confidentialités.html">Politique de Confidentialités</a></li>
+                                            <li><a href="../condition-générale-d'utlisation/condition-générale-d'utlisation.html">Condition générale d'utlisation</a></li>
+                                            <li><a href="../politique-d'utilisation-des-cookies/politique-d'utilisation-des-cookies.html">Politique  d'utilisation des cookies </a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 px-5">
+                                    <!---------------- Debut Section Newsletters ------------->
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-heading">
+                                            <h3>Newsletter</h3>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="footer-text mb-25">
+                                            <p>N'oublier pas de vous souscrire à notre newsletter.</p>
+                                        </div>
+    
+                                        <div class="input-group subscribe-form mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Adress " id="email">
+                                            <button class="btn" type="button" id="button-send" onclick="inscription()"><i class="bi bi-send-fill"></i></button>
+                                        </div>
+                                    </div>
+                                    <!--------------- Fin Section Newsletters --------------->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!----------------Fin Section Footer ------------------->
+
+    <!-- Script pour le popup  -->
+    <script>
+        let modalBtns = [...document.querySelectorAll(".button")];
+        modalBtns.forEach(function (btn) {
+        btn.onclick = function () {
+            let modal = btn.getAttribute("data-modal");
+            document.getElementById(modal).style.display = "block";
+        };
+        });
+        let closeBtns = [...document.querySelectorAll(".close")];
+        closeBtns.forEach(function (btn) {
+        btn.onclick = function () {
+            let modal = btn.closest(".modal");
+            modal.style.display = "none";
+        };
+        });
+        window.onclick = function (event) {
+        if (event.target.className === "modal") {
+            event.target.style.display = "none";
+        }
+        };
+    </script>
+</body>
+</html>
