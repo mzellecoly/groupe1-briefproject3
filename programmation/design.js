@@ -9,8 +9,8 @@ export default[
         title: "Video2- Maquettage",
     },
     {
-        src: "image/video2.mp4",
-        title: "design",
+        src: "image/press.mp4",
+        title: "Wordpress",
     },
     {
         src: "image/video3.mp4",

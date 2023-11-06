@@ -12,13 +12,20 @@
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   min-height: 500px;
+   min-height: 400px;
 }
 
 .link-banierre h4{
    margin-left: 5vh;
    position: relative;
    top: -15vh;
+}
+@media screen and (max-width: 768px) {
+   .link-banierre h4{
+      margin-top: 20%;
+      margin-left: 3%;
+   }
+   
 }
 
 .link-banierre a{
@@ -43,6 +50,9 @@
    }
    .banierre-service{
       margin: 0 auto;
+      min-height: 115px;
+      margin-top: 0;
+
    }
   
 }
@@ -53,14 +63,16 @@
    padding: 10px;
    box-shadow: 0 1px 2px gray;
    width: 700px;
-   height: 400px;
+   /* height: 400px; */
 }
 @media screen and (max-width: 768px) {
    #design{
       display: grid;
       grid-template-columns: auto;
-      width: 5%;
+      width: 100%;
       margin-left: 1%;
+      margin-bottom: -5%;
+      margin-top: -20%;
    }
   .main-video-content {
       width: 380px;
@@ -76,8 +88,22 @@
       width: 350px;
       height: 200px;
    }
+   .playlist-video{
+      display: grid;
+      grid-template-columns: auto;
+
+   }
+   .playlist{
+      max-height: 10px;
+      width: 385px;
+   }
+   .playlist::-webkit-scrollbar{
+      display: none;
+   }
+
    
 }
+
 .playlist{
    display: flex;
    flex-direction: column;
@@ -129,39 +155,52 @@
 }
 .message{
    display: flex;  
-   /* border: 1px solid #000; */
-   width: 75%;
+   border: 1px solid #000;
+   width: 60%;
    margin-top: 2%;
    background-color: rgb(243, 239, 239);
-   margin-left: 1%;
+   margin-left: 5%;
 }
 .commen{
    /* border: 1px solid #000; */
    margin-left: -25%;
    margin-top: 1%;
 }
-h5{
+.commen p{
    /* border: 1px solid #000; */
-   margin-left: 25%;
+   margin-left: 18%;
    margin-top: 1%;
    width: 150%;
 }
 @media screen and (max-width:768px){
    .profil img{
-      width: 50%;
+      width: 20%;
    }
    .message{
+      border: 1px solid #000;
+      width: 95%;
+      height: 10%;
+   }
+    .commen p{
+      margin-left:-10%;
       /* border: 1px solid #000; */
       width: 105%;
-   }
-   h5{
-      font-size: 20px;
-      margin-left: 15%;
-      /* border: 1px solid #000; */
-      width: 85%;
+      font-size: 10px;
+      margin-top: 4%;
 
    }
-   
+   .commentaire{
+      /* display: grid;
+      grid-template-columns: auto; */
+      margin-top: 8%;
+      /* border: 1px solid #000; */
+      font-size: 10px;
+      width: 75%;
+      margin-left: 15%;
+   }
+   .commen{
+      /* width: 100%; */
+   }
 }
 .forma{
    display: grid;
@@ -178,10 +217,12 @@ h5{
       margin-bottom: 2%;
    }
    .autres h1{
-      margin-right: -100%;
       border: 1px solid #000;
       width: 50%;
+      font-size: 16px;
+      margin: 0 auto;
    }
+
    
 }
 .item1{
@@ -220,7 +261,7 @@ h5{
 }
 .item3{
    /* border: 1px solid #000; */
-   background-image: url(https://media.istockphoto.com/id/816887330/photo/cms.webp?b=1&s=170667a&w=0&k=20&c=2lr7M_pcb8Mm3R6wD5x7vWxZ_1ra7Mxon1W2wclWgZ4=);
+   background-image: url(https://img.freepik.com/photos-premium/presentation-ventes-homme-affaires-mise-jour-du-rapport-marketing-financier-lors-reunion-tableau-analyse-financiere-du-document-kpi-analyse-donnees-responsable-strategie-parle-planification-gens_590464-83149.jpg?size=626&ext=jpg&ga=GA1.1.48596631.1693317651&semt=ais);
    background-repeat: no-repeat;
    background-size: cover;
    padding: 25%;
