@@ -15,21 +15,5 @@ export default[
         src: "image/video3.mp4",
         title: "design",
     },
-    {
-        src: "image/video4.mp4",
-        title: "design",
-    },
-    {
-        src: "image/video4.mp4",
-        title: "design",
-    },
-    {
-        src: "image/video4.mp4",
-        title: "design",
-    },
-    {
-        src: "image/video4.mp4",
-        title: "design",
-    }
     
 ]   ;
