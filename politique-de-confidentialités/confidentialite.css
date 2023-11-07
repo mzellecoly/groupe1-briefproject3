@@ -1,0 +1,33 @@
+:root{
+    --orange :#E94D1A;
+    --orange-opac :#e94e1a38;
+    --noir :#151414;
+    --gris :#f6f6f6;
+}
+body{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+/* .confidentialite{
+    text-align: center;
+} */
+.confidentialite-line{
+    background-color: var(--orange);
+    width: 15%;
+    height: 3px;
+    margin: 0 auto;
+}
+.confidentialite-form{
+    background-color: #E94D1A;
+    color: #E94D1A;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: 60px;
+    height: 60px;
+}
+.confidentialite-form{
+    margin-left: 50px;
+}
+.confidentialite-titre{
+    font-size: 20px;
+    
+}

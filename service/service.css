@@ -1,0 +1,213 @@
+:root{
+    --main-color: #E94D1A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* debut banierre  */
+.banierre-service{
+    background-image: url('https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041863.jpg?size=626&ext=jpg&ga=GA1.1.59389668.1692912989&semt=sph');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+.link-banierre h4{
+    margin-left: 5vh;
+    position: relative;
+    top: -15vh;
+}
+
+.link-banierre a{
+    color: black;
+    text-decoration: none;
+}
+
+.link-banierre .link-active{
+    color: var(--main-color);
+}
+
+/* Fin banierre  */
+
+/* Debut service  */
+
+.container-service h3{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.service-item{
+    margin-bottom: 10vh;
+}
+
+ /* Taille des carte  */
+ .container-service .desc-card{
+    height: 40vh;
+    padding: 5vh 0;
+ }
+ .container-service .card img{
+    height: 40vh;
+    border-radius: 3vh;
+ }
+
+/* Debut ligne séparatrice */
+.separation{
+    /* margin: 6vh 0; */
+    display: flex;
+    rotate: 90deg;
+    width: 30vh;
+    margin-left: -10vh;
+    margin-top: 9vh;
+}
+
+.soulignement{
+    width: 50%;
+    height: 2px;
+    background-color: #AAA7A7;
+    
+
+    /* border: 2px solid #AAA7A7; */
+}
+.bi-circle-fill{
+    color: var(--main-color);
+    position: relative;
+    top: -1.7vh;
+    
+}
+
+.container-btn-service{
+    text-align: center;
+}
+.btn-service{
+    background-color: var(--main-color);
+    color: white;
+    padding: 1vh 4vh;
+    margin-top: 2vh;
+}
+
+.btn-service:hover{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+
+/* Debut partenaires  */
+
+.partenaire-img img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    margin: 0 auto;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+.partenaire-img{
+    animation-timing-function: linear;
+}
+
+
+@keyframes mymove {
+    from {right: 0px;}
+    to {right: 300px;}
+  }
+
+/* Debut media-queries  */
+@media screen and (max-width: 1900px) {
+    .bi-circle-fill{
+        position: relative;
+        top: -1vh;
+        
+    }
+}
+@media screen and (max-width: 1600px) {
+    .bi-circle-fill{
+        position: relative;
+        top: -1.2vh;
+        
+    }
+    .separation{
+        margin-left: -13vh;
+        margin-top: 12vh;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .bi-circle-fill{
+        position: relative;
+        top: -1.65vh;
+        
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .bi-circle-fill{
+        position: relative;
+        top: -1.2vh;
+        
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .bi-circle-fill{
+        position: relative;
+        top: -1vh;
+        
+    }
+    .separation{
+        margin-left: -13vh;
+        margin-top: 12vh;
+    }
+    
+
+    .partenaires h3{
+        margin-top: 15vh;
+    }
+    .partenaire-img img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 1px solid var(--main-color);
+        margin: 0 auto;
+        font-weight: bold;
+        /* position: relative; */
+        /* animation: mymove 5s infinite; */
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    .separation{
+        rotate: 0deg;
+        width: 35vh;
+        margin-left: 5vh;
+        margin-top: -2vh;
+    }
+
+    .container-service .desc-card{
+        height: 20vh;
+        padding: 1vh 0;
+     }
+    
+     .container-btn-service{
+        text-align: start;
+     }
+    
+
+}
+
+/* Fin media queries  */

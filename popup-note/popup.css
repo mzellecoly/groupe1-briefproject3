@@ -1,0 +1,47 @@
+:root{
+    --orange :#E94D1A;
+    --orange-opac :#e94e1a38;
+    --noir :#151414;
+    --gris :#f6f6f6;
+}
+body{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.popupnote {
+	background-color: var(--gris);
+	/* padding: 50px 0 0; */
+	margin: 0 auto;
+	width: 50%;
+	padding: 10px 0;
+}
+
+.popupnote h3{
+	text-align: center;
+}
+
+.stars {
+	margin: 50px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.stargrey {
+	color: #96969d;
+}
+
+.yellow {
+	color: var(--orange);
+}
+
+.star:hover {
+	cursor: pointer;
+}
+.note-bouton{
+	border: none;
+	background-color: var(--orange);
+	color: white;
+	font-weight: bold;
+	border-radius: 20px;
+	width: 20%;
+	height: 30px;
+}
