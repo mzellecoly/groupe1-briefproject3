@@ -138,28 +138,34 @@ position: justify;
 
 
 
-@media only screen and (min-width: 760px) and (max-width:930px) {
+@media only screen and (width <= 760px) and ( width <= 930px) {
     .about-text{
         display: flex!important;
         justify-content: space-between ;
         flex-direction: column;
     }
 
-    .about-para { 
-        /* width: 75%; */
-        margin: 2px auto;
-        /* border: 1px solid #E94D1A; */
-        border: none;
-        border-radius: 0 55% 0 55%;
-        text-align: center;
-        align-items: center;
-        background-color: #fff;
-        box-shadow: 10 10 10 10 gray;
-        padding: 2px;
-        float: left;
+    .carre {
+        -webkit-clip-path: inset(5% 20% 15% 0);
+        clip-path: inset(5% 20% 15% 0);
         position: relative;
-        height: 10vh;
-        /* z-index: 1; */
+        top: 100%;
+        float: right;
+        right: 60%;
+        width: 120px;
+        height: 100px;
+        padding:2px;
+        }
+  .about-para{
+    position: relative;
+     height: auto ;
+     float: left;
+     margin-left: 30px;
+     padding: 2px ;
+     top:100%;
+     right: 2;
+    
+
         
     }
     
@@ -167,12 +173,47 @@ position: justify;
     
 }
 
-@media only screen and (min-width: 448px)  {
+@media only screen and (width <= 448px)  
+    {
     .about-text{
         display: flex!important;
         justify-content: space-between ;
         flex-direction: row;
     }
+
+
+    .about-left {
+        /* text-align: center; */
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    .about-para{
+    position: relative;
+     height: auto ;
+     float: left;
+     margin-left: 30px;
+     padding: 2px ;
+     top:100%;
+     /* right: 2; */
+        
+    }
+   .carre {
+    -webkit-clip-path: inset(5% 20% 15% 0);
+    clip-path: inset(5% 20% 15% 0);
+    position: relative;
+    top: 100%;
+    float: right;
+    right: 60%;
+    width: 120px;
+    height: 100px;
+    padding:2px;
+    }
+
+
+ 
+    
+
+
 
 
 }
